@@ -11,7 +11,7 @@ int main()
      {
        for (int k=0;k<=sizer-i;k++)
           cout << ' ';
-        for (int j=2;j<=i*2;j++)
+        for (int j=1;j<i*2;j++)
          {
             cout << '*';
          }
@@ -24,6 +24,5 @@ int main()
        else
           cout << ' ';
       }
-
     return 0;
 }

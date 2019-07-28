@@ -10,13 +10,10 @@ int main()
     cin>>sizer;
 //////////Task1.8a/////////
 
-    for(int i=0;i<sizer;i++)
+    for(int i=1;i<=sizer;i++)
     {
-      for(int j=0;j<sizer;j++)
-       {
-        if (j<=i)
-          cout<<'a';
-       }
+      for (int j=1;j<=sizer+i-4;j++)
+          cout << 'a';
       cout<<'\n';
     }
 
@@ -24,15 +21,13 @@ int main()
     cout << '\n';
 //////////Task1.8b/////////
 
-    for(int i=0;i<sizer;i++)
+    for(int i=0;i<=sizer;i++)
     {
-      for(int j=0;j<sizer;j++)
-       {
-        if (j>=i)
-          cout<<'a';
-       }
+      for (int j=1;j<=sizer-i;j++)
+          cout << 'a';
       cout<<'\n';
     }
+
 ///////////////////////////
     cout << '\n';
 //////////Task1.8c/////////
@@ -47,6 +42,5 @@ int main()
          }
          cout << '\n';
      }
-
     return 0;
 }

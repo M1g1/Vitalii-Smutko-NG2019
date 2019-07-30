@@ -17,12 +17,8 @@ int main()
          }
          cout << '\n';
      }
-     for (int i=0;i<=sizer;i++)
-      {
-       if (i==sizer)
-          cout << '*';
-       else
+     for (int i=0;i<sizer;i++)
           cout << ' ';
-      }
+        cout << '*';
     return 0;
 }

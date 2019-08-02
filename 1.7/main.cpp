@@ -4,20 +4,20 @@ using namespace std;
 
 int main()
 {
-    int sizer;
+    int sizer, i, k;
     cout << "Vvedite razmer elki: ";
     cin >> sizer;
-    for (int i=1;i<=sizer;i++)
+    for (i=1;i<=sizer;i++)
      {
-       for (int k=0;k<=sizer-i;k++)
+       for (k=0;k<=sizer-i;k++)
           cout << ' ';
-        for (int j=1;j<i*2;j++)
+        for (k=1;k<i*2;k++)
          {
             cout << '*';
          }
          cout << '\n';
      }
-     for (int i=0;i<sizer;i++)
+     for (i=0;i<sizer;i++)
           cout << ' ';
         cout << '*';
     return 0;

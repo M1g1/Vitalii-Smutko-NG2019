@@ -18,11 +18,10 @@ int main()
      {
         for (int j=0 ; j<5 ; j++)
         {
-            if (num_of_stars[j]<=0)
+            if (num_of_stars[j]-i<=0)
                cout << ' ';
             else
                cout << '*';
-          num_of_stars[j]--;
         }
         cout << endl;
      }

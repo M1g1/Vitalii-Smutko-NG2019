@@ -10,7 +10,7 @@ int main()
      {
          cout << "Vvedite chislo: ";
          cin >> num_of_stars[i];
-          while(num_of_stars[i]%2==0)
+          while(num_of_stars[i]%2==0 && num_of_stars[i]!=0)
           {
               cout <<" Error! Chislo dolzhno byt nechyotnym!" << endl;
               cout << "Vvedite chislo: ";
@@ -25,7 +25,7 @@ int main()
           maxElement=num_of_stars[i];
      for (i=0; i<number_of_entered_numbers ; i++)
      {
-      for (space_and_star=0; space_and_star<(maxElement-num_of_stars[i])/2.0 ; space_and_star++) //cycle for space
+      for (space_and_star=0; space_and_star<(maxElement-num_of_stars[i])/2 ; space_and_star++) //cycle for space
          cout << ' ';
        for (space_and_star=0; space_and_star<num_of_stars[i] ; space_and_star++) //cycle for stars
           cout << '*';

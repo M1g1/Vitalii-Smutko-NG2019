@@ -10,6 +10,12 @@ int main()
      {
          cout << "Vvedite chislo: ";
          cin >> num_of_stars[i];
+          while(num_of_stars[i]%2==0)
+          {
+              cout <<"Error! Chislo dolzhno byt nechyotnym!";
+              cout << "Vvedite chislo: ";
+              cin >> num_of_stars[i];
+          }
          number_of_entered_numbers++;
          i++;
      }while (num_of_stars[i-1]!=0 && i<20);

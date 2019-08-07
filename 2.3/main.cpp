@@ -12,7 +12,7 @@ int main()
          cin >> num_of_stars[i];
           while(num_of_stars[i]%2==0)
           {
-              cout <<"Error! Chislo dolzhno byt nechyotnym!";
+              cout <<" Error! Chislo dolzhno byt nechyotnym!" << endl;
               cout << "Vvedite chislo: ";
               cin >> num_of_stars[i];
           }

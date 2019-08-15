@@ -15,13 +15,12 @@ int main()
           if (str[i]=='a'+j || str[i]=='A'+j)
           {
             count[j]++;
-            if(count[j]==1)
-                alphabet[j]='A'+j;
+            alphabet[j]='A'+j;
           }
          i++;
       }
     //Sorting
-    for(j=0; j<25; j++)
+    for(j=0; j<26; j++)
         for(i=0; i<25-j; i++)
          if (count[i]<count[i+1])
             {

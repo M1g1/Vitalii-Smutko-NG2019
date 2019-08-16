@@ -5,7 +5,6 @@ using namespace std;
 int main()
 {
     char str[100]={'\0'};
-    char ch;
     int i=0;
     cout << "Enter your string: ";
     cin.getline(str, 100);
@@ -13,10 +12,9 @@ int main()
      while (str[i]!='\0')
      {
       if (str[i]>=97 && str[i]<=122)
-       ch = str[i]-32;
+       cout << (char) (str[i]-32);
       else
-       ch = str[i];
-      cout << ch;
+       cout << (char) (str[i]);
       i++;
      }
     return 0;

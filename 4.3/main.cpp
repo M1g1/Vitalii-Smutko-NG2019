@@ -28,25 +28,25 @@ void cardOutput(float cards[], int amount)
      cout << cards[amount-1] << ' ';
 }
 
-void cashDispenser(float cards[])
+void cashDispenser(float cards[], int size)
 {
     int numCard;
     chooseCard(numCard);
-     if(numCard<1 || numCard>10)
+     if(numCard<1 || numCard>size)
         cout << "Takoi kartochki net!" << endl;
      else
      {
         addMoney(cards,numCard);
-        cardOutput(cards,10);
+        cardOutput(cards, size);
         cout << endl;
     }
-     cashDispenser(cards);
+     cashDispenser(cards, size);
 }
 
 
 int main()
 {
     float cards[10]={0,0,0,0,0,0,0,0,0,0};
-    cashDispenser(cards);
+    cashDispenser(cards, 10);
     return 0;
 }

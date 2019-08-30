@@ -4,26 +4,26 @@
 
 using namespace std;
 
-struct Student
+class studGroup
 {
+private:
+    struct Student
+    {
     string name = "-";
     string surname = "-";
     int    age = 0;
     string gender = "-";
-};
+    };
 
-struct Curator
-{
+    struct Curator
+    {
     string name = "-";
     string surname = "-";
     int    age = 0;
     string gender = "-";
     string academicDegree = "-";
-};
+    };
 
-
-class studGroup
-{
 public:
     studGroup();
     void OutputStud();      //Output students

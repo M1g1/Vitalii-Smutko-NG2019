@@ -4,18 +4,6 @@
 
 using namespace std;
 
-//String to uppercase
-
-string toupperStr(string str)
-{
-    for(int i=0; str[i]!=0; i++)
-        if (str[i]>=97 && str[i]<=122)
-            str[i] = str[i]-32;
-        else
-            str[i] = str[i];
-    return str;
-}
-
 struct Student
 {
     string name = "-";
@@ -51,6 +39,7 @@ public:
     void setFacult();       //Create faculty
 
 private:
+    string toupperStr(string str); //String to uppercase
     int numStud; //number of students
     bool setF;   //for checking faculty definition
     Student students[qPlaces]; //qPalaces - maximum number of places for students in a group
@@ -64,6 +53,18 @@ studGroup::studGroup()
     numStud = 0;
     facultName = "-";
     setF = false;
+}
+
+//String to uppercase
+
+string studGroup::toupperStr(string str)
+{
+    for(int i=0; str[i]!=0; i++)
+        if (str[i]>=97 && str[i]<=122)
+            str[i] = str[i]-32;
+        else
+            str[i] = str[i];
+    return str;
 }
 
 //Create faculty
